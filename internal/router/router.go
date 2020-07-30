@@ -9,4 +9,5 @@ import (
 //SetupRoutes func
 func SetupRoutes(app *fiber.App) {
 	app.Get("/healthcheck", healthcheck.Healthcheck)
+	app.Get("/beers", beers.GetBeers)
 }
